@@ -33,7 +33,7 @@ export default function App() {
             <p className="w-60">
               if you don’t like field.computer your field blog is built on a ‘home file’ (an offline file containing the total information of a webpage) simply save your blog offline and move to another ‘home file’ supporting platform or enjoy it from the privacy of a device with no internet
             </p>
-            <div className="h-8"></div>
+            <div className="h-24"></div>
             <img src="https://www.dropbox.com/s/y2h3ovibsmzanps/field.computer.png?raw=1" alt="no one lives here" className="w-48"></img>
             <p className="w-32 text-xs pt-1">"no one lives here"</p>
           </div>}
