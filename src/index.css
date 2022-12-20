@@ -13,6 +13,6 @@
   .field {
     width: 15rem;
     font-size: 3rem;
-    padding-top: 11%;
+    padding-top: min(30%, 12rem);
     justify-self: center;
   }
