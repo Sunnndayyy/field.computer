@@ -6,7 +6,7 @@ export default function App() {
   const [showMore, setShowMore] = useState(false);
   
   return (
-    <div className="grid justify-items-center content-start pr-80">
+    <div className="grid justify-items-center content-start">
       <h1 class="field">field</h1>
       <div className="h-4"></div>
       <h2 className="w-60">a calm technology</h2>
