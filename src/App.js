@@ -1,47 +1,64 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
+const HeadingWithSpacing = ({ children }) => (
+  <>
+    <h2 className="w-full lg:w-1/2 2xl:w-[708px] text-2xl">{children}</h2>
+    <div className="h-8"></div>
+  </>
+);
 
+const MoreSection = ({ showMore }) => (
+  <>
+    <div className="h-8"></div>
+    <p className="text-2xl">
+      create a blog forever owned by you via blockchain technology; available
+      online and offline
+    </p>
+    <div className="h-8"></div>
+    <p className="text-2xl">
+      a beautiful non biased place, to express, share and connect all online and
+      personal content with minimal restrictions, akin to a personal diary or
+      archive
+    </p>
+    <div className="h-8"></div>
+    <p className="text-2xl">
+      field is on a path to decentralisation, meaning once fully established,
+      users can propose changes and updates to the platform and vote on those
+      proposals eg. new capabilities, updated user experience or electing
+      governance members for protecting core values of the user base
+    </p>
+  </>
+);
 
 export default function App() {
   const [showMore, setShowMore] = useState(false);
-  
-  return (
-    <div className="grid justify-items-center content-start mr-10">
-      <h1 class="field">field</h1>
-      <div className="h-4"></div>
-      <h2 className="w-60">a calm technology</h2>
-      <div className="h-8"></div>
-      <h2 className="w-60">this is a blogging platform where you own your content forever, online and offline </h2>
-      <div className="h-8"></div>
-      <h2 className="w-60">home for the pages of your mind</h2>
-      <img src="https://www.dropbox.com/s/6zsbhwgqe58egqw/Field%20demo.gif?raw=1" alt="field demo" className="pt-8 pl-14"></img>
-      <div className="h-8"></div>
-      <h2 className="w-60">no ads</h2>
-      <div className="h-8"></div>
-      <h2 className="w-60">no censorship</h2>
-      <div className="h-8"></div>
-      <div className="w-60">
-        <button id="moreBtn" onClick={()=>setShowMore(!showMore)} className="font-bold">
-          {showMore === true ? '- more' : '+  more'}
-        </button>
-        {showMore && <div>
-          <div className="h-8"></div>
-          <p className="w-60">
-            field is on a path to decentralisation, meaning once fully established, users can propose changes and updates to the platform and vote on those proposals eg. new capabilities, updated user experience or electing governance members for protecting core values of the user base
-            </p>
-            <div className="h-8"></div>
-            <p className="w-60">
-              if you don’t like field.computer your field blog is built on a ‘home file’ (an offline file containing the total information of a webpage) simply save your blog offline and move to another ‘home file’ supporting platform or enjoy it from the privacy of a device with no internet
-            </p>
-            <div className="h-24"></div>
-            <img src="https://www.dropbox.com/s/y2h3ovibsmzanps/field.computer.png?raw=1" alt="no one lives here" className="w-48"></img>
-            <p className="w-32 text-xs pt-1">"no one lives here"</p>
-          </div>}
-      </div>
-      <div className="h-96"></div>
-      
-    </div>
 
-    
+  return (
+    <>
+      <header className="fixed top-0 left-0 p-4 text-xl font-bold">
+        field
+      </header>
+      <div className="grid justify-items-center content-start">
+        <div className="h-60"></div>
+        <HeadingWithSpacing>
+          this is a blogging platform where you own your content forever, online
+          and offline
+        </HeadingWithSpacing>
+        <HeadingWithSpacing>home for the pages of your mind</HeadingWithSpacing>
+        <HeadingWithSpacing>no ads</HeadingWithSpacing>
+        <HeadingWithSpacing>no censorship</HeadingWithSpacing>
+        <div className="w-full lg:w-1/2 2xl:w-[708px]">
+          <button
+            id="moreBtn"
+            onClick={() => setShowMore(!showMore)}
+            className="font-bold text-2xl inline-block"
+          >
+            {showMore === true ? "- more" : "+  more"}
+          </button>
+          {showMore && <MoreSection />}
+        </div>
+        <div className="h-96"></div>
+      </div>
+    </>
   );
 }
