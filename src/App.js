@@ -23,12 +23,6 @@ const MoreSection = ({ showMore }) => (
       archive
     </p>
     <div className="h-8"></div>
-    <p className="text-2xl">
-      field is on a path to decentralisation, meaning once fully established,
-      users can propose changes and updates to the platform and vote on those
-      proposals eg. new capabilities, updated user experience or electing
-      governance members for protecting core values of the user base
-    </p>
   </>
 );
 
