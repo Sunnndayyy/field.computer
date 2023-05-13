@@ -5,7 +5,7 @@ const Deck = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (password === "Fieldtrip") {
+    if (password === "Welcomefield") {
       window.location.href = "https://pitchdeck.hypermatic.com/slides/lh32ny6302566/?token=ckdsUjlFMmhHald2QGI=";
     } else {
       alert("Incorrect password. Please try again.");
