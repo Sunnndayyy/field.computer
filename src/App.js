@@ -18,9 +18,7 @@ const MoreSection = ({ showMore }) => (
     </p>
     <div className="h-8"></div>
     <p className="text-2xl">
-      a beautiful non biased place, to express, share and connect all online and
-      personal content with minimal restrictions, akin to a personal diary or
-      archive
+      a beautiful non-biased place to express, share and connect all online and personal content with minimal restrictions, akin to a personal diary or archive
     </p>
     <div className="h-8"></div>
   </>
