@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import RightArrowButton from './RightArrowButton'; // Assuming the RightArrowButton component is in the same directory.
 
 const Deck = () => {
   const [password, setPassword] = useState("");
@@ -25,10 +26,9 @@ const Deck = () => {
         />
         <button
           type="Submit"
-          className="bg-white px-4 py-2 text-2xl"
-          style={{ color: "rgb(156, 163, 175)" }}
+          className="bg-white px-4 py-2"
         >
-          ➡️
+          <RightArrowButton />
         </button>
       </form>
     </div>
