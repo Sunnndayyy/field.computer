@@ -4,7 +4,7 @@ import Deck from './Deck';
 
 const HeadingWithSpacing = ({ children }) => (
   <>
-    <h2 className="w-full px-4 mx-2 lg:w-1/2 lg:px-0 lg:mx-0 2xl:w-[708px] text-2xl">{children}</h2>
+    <h2 className="w-full px-6 mx-4 lg:w-1/2 lg:px-0 lg:mx-0 1xl:w-[708px] text-1xl">{children}</h2>
     <div className="h-8"></div>
   </>
 );
@@ -37,11 +37,11 @@ function HomePage() {
       <HeadingWithSpacing>home for the pages of your mind</HeadingWithSpacing>
       <HeadingWithSpacing>no ads</HeadingWithSpacing>
       <HeadingWithSpacing>no censorship</HeadingWithSpacing>
-      <div className="w-full px-4 mx-2 lg:w-1/2 lg:px-0 lg:mx-0 2xl:w-[708px]">
+      <div className="w-full px-6 mx-4 lg:w-1/2 lg:px-0 lg:mx-0 1xl:w-[708px]">
         <button
           id="moreBtn"
           onClick={() => setShowMore(!showMore)}
-          className="font-bold text-2xl inline-block"
+          className="font-bold text-1xl inline-block"
         >
           {showMore === true ? "- more" : "+  more"}
         </button>
