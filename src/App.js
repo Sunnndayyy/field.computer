@@ -12,14 +12,14 @@ const HeadingWithSpacing = ({ children }) => (
 const MoreSection = ({ showMore }) => (
   <>
     <div className="h-8"></div>
-    <p className="text-2xl">
+    <HeadingWithSpacing>
       create a blog forever owned by you via blockchain technology; available
       online and offline
-    </p>
+    </HeadingWithSpacing>
     <div className="h-8"></div>
-    <p className="text-2xl">
+    <HeadingWithSpacing>
       a beautiful non-biased place to express, share and connect all online and personal content with minimal restrictions, akin to a personal diary or archive
-    </p>
+    </HeadingWithSpacing>
     <div className="h-8"></div>
   </>
 );
