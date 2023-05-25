@@ -21,6 +21,9 @@ const MoreSection = ({ showMore }) => (
       a beautiful non-biased place to express, share and connect all online and personal content with minimal restrictions, akin to a personal diary or archive
     </HeadingWithSpacing>
     <div className="h-8"></div>
+    <HeadingWithSpacing>
+      field is on a path to being user ran and owned
+    </HeadingWithSpacing>
   </>
 );
 
